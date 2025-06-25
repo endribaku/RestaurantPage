@@ -1,0 +1,161 @@
+/* Header */
+body {
+    margin: 0px;
+}
+
+.header-name {
+    font-size: clamp(1.6rem, 1.5vw, 6rem);
+}
+
+.nav-button {
+    font-size: clamp(1.1rem, 1vw, 6rem);
+}
+
+/* Hero Section */
+.home-container {
+    background-image: url(../asset/resource/homepage-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text {
+    color: white;
+    font-size: clamp(3rem, 6vw, 10rem);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Description Section */
+.description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Responsive Image */
+.description-image {
+    width: clamp(250px, 40vw, 450px);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Text */
+.description-text {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    max-width: 500px;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .description-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.menu-header {
+    font-size: calc(3rem + 0.5vw);
+    text-align: center;
+}
+
+.menu-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.menu-card {
+    width: clamp(250px, 30vw, 1250px);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.menu-name {
+    font-size: calc(1.5rem + 0.5vw) ;
+    margin: 0.5rem 0;
+}
+
+.menu-description {
+    font-size: calc(1rem + 0.5vw);
+    margin-bottom: 0.5rem;
+}
+
+.menu-price {
+    font-weight: bold;
+    font-size: calc(1.2rem + 0.25vw);
+    color: #444;
+}
+
+/* Main Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 1rem 2rem;
+    gap: 5px;
+  
+}
+
+.header-text {
+    font-size: clamp(2rem, 2.4vw, 4rem);
+    font-weight: bold;
+}
+
+/* Nav Buttons */
+.nav-bar nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-button {
+    padding: 0.6rem 1.2rem;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: clamp(1.1rem, 1vw, 6rem);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: #222;
+    transform: scale(1.15);
+}
+
+
